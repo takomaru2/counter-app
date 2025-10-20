@@ -1,3 +1,3 @@
 export const CounterApp = () => {
-  return <div>app</div>;
+  return <div>counter</div>;
 };

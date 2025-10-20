@@ -3,14 +3,12 @@ import { useState } from "react";
 import { AddButton } from "../AddButton/index.jsx";
 import { MinusButton } from "../MinusButton/index.jsx";
 import { MultiplyButton } from "../MultiplyButton/index.jsx";
+import { generateNumbers } from "../../utils/generateNumbers.js";
 
 export const CounterApp = () => {
   const [count, setCount] = useState(0);
 
-  const numbers = [];
-  for (let i = 0; i < 10; i++) {
-    numbers.push(i + 1);
-  }
+  const numbers = generateNumbers();
 
   const addButtons = numbers.map((num) => (
     <AddButton num={num} count={count} setCount={setCount} />
@@ -20,9 +18,11 @@ export const CounterApp = () => {
     <MinusButton num={num} count={count} setCount={setCount} />
   ));
 
-  const multiplyButtons = numbers.map((num) => (
-    <MultiplyButton num={num} count={count} setCount={setCount} />
-  ));
+  const multiplyButtons = numbers.map((num) => {
+    if (num === 1) return;
+    return <MultiplyButton num={num} count={count} setCount={setCount} />;
+  });
+
   return (
     <div>
       <div className={styles.counter}>{count}</div>

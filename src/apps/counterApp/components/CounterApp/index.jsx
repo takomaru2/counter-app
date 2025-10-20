@@ -2,29 +2,33 @@ import styles from "./index.module.scss";
 import { useState } from "react";
 import { AddButton } from "../AddButton/index.jsx";
 import { MinusButton } from "../MinusButton/index.jsx";
+import { MultiplyButton } from "../MultiplyButton/index.jsx";
 
 export const CounterApp = () => {
   const [count, setCount] = useState(0);
 
-  const handleClick2 = () => {
-    setCount(count * 2);
-  };
+  const numbers = [];
+  for (let i = 0; i < 10; i++) {
+    numbers.push(i + 1);
+  }
 
+  const addButtons = numbers.map((num) => (
+    <AddButton num={num} count={count} setCount={setCount} />
+  ));
+
+  const minusButtons = numbers.map((num) => (
+    <MinusButton num={num} count={count} setCount={setCount} />
+  ));
+
+  const multiplyButtons = numbers.map((num) => (
+    <MultiplyButton num={num} count={count} setCount={setCount} />
+  ));
   return (
     <div>
       <div className={styles.counter}>{count}</div>
-
-      <AddButton num={1} count={count} setCount={setCount} />
-      <AddButton num={2} count={count} setCount={setCount} />
-      <AddButton num={3} count={count} setCount={setCount} />
-
-      <MinusButton num={1} count={count} setCount={setCount} />
-      <MinusButton num={2} count={count} setCount={setCount} />
-      <MinusButton num={3} count={count} setCount={setCount} />
-
-      <button onClick={handleClick2} className={styles.button}>
-        x2
-      </button>
+      {addButtons}
+      {minusButtons}
+      {multiplyButtons}
     </div>
   );
 };

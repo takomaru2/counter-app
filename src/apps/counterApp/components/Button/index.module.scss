@@ -1,29 +1,18 @@
-.addButton {
+.button {
   font-weight: bold;
   font-size: 2vw;
   color: white;
+  width: 15vw;
+  min-width: 50px;
+  max-width: 200px;
+}
+
+.add {
   background-color: orangered;
-  width: 15vw;
-  min-width: 50px;
-  max-width: 200px;
 }
-
-.minusButton {
-  font-weight: bold;
-  font-size: 2vw;
-  color: white;
+.minus {
   background-color: dodgerblue;
-  width: 15vw;
-  min-width: 50px;
-  max-width: 200px;
 }
-
-.multiplyButton {
-  font-weight: bold;
-  font-size: 2vw;
-  color: white;
-  background-color: green;
-  width: 15vw;
-  min-width: 50px;
-  max-width: 200px;
+.multiply {
+  background-color: darkgreen;
 }

@@ -1,13 +1,9 @@
-import styles from "./index.module.scss";
+import { Button } from "../Button/index.jsx";
 
 export const MinusButton = ({ count, setCount, num }) => {
   const handleClickMinus = () => {
     setCount(count - num);
   };
 
-  return (
-    <button onClick={handleClickMinus} className={styles.button}>
-      -{num}
-    </button>
-  );
+  return <Button num={num} handleClick={handleClickMinus} operator={"-"} />;
 };

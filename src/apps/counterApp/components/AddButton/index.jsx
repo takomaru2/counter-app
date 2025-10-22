@@ -1,13 +1,9 @@
-import styles from "./index.module.scss";
+import { Button } from "../Button/index.jsx";
 
 export const AddButton = ({ count, setCount, num }) => {
   const handleClickAdd = () => {
     setCount(count + num);
   };
 
-  return (
-    <button onClick={handleClickAdd} className={styles.button}>
-      +{num}
-    </button>
-  );
+  return <Button num={num} handleClick={handleClickAdd} operator={"+"} />;
 };

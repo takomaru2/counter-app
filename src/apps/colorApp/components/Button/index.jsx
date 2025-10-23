@@ -13,17 +13,31 @@ export const Button = ({ color, colorCode, handleClick }) => {
     case "blue":
       className = styles.blueButton;
       break;
+    case "yellow":
+      className = styles.yellowButton;
+      break;
     case "purple":
       className = styles.purpleButton;
       break;
-    case "yellow":
-      className = styles.yellowButton;
+    case "green":
+      className = styles.greenButton;
+      break;
+    case "orange":
+      className = styles.orangeButton;
+      break;
+    case "pink":
+      className = styles.pinkButton;
+      break;
+    case "gray":
+      className = styles.grayButton;
+      break;
+    case "cyan":
+      className = styles.cyanButton;
       break;
     default:
       className = styles.redButton;
       break;
   }
-
   return (
     <button onClick={shot} className={`${styles.button} ${className}`}>
       <p>{color}</p>

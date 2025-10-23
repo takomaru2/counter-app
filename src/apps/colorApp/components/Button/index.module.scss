@@ -1,0 +1,21 @@
+.button {
+  font-weight: bold;
+  width: calc(100% / 3);
+}
+.button:hover {
+  color: white;
+  background-color: blue;
+}
+
+.redButton:hover {
+  background-color: #ff5733;
+}
+.blueButton:hover {
+  background-color: #3357ff;
+}
+.purpleButton:hover {
+  background-color: #8e44ad;
+}
+.yellowButton:hover {
+  background-color: #f1c40f;
+}

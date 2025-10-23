@@ -1,0 +1,15 @@
+.wrapper {
+  box-sizing: border-box;
+  border: 40px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.blue {
+  border: 40px solid blue;
+}
+
+.red {
+  border: 40px solid red;
+}

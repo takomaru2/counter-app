@@ -25,8 +25,7 @@ export const Button = ({ color, colorCode, handleClick }) => {
   }
 
   return (
-    // <button onClick={shot} className={`${styles.button} ${className}`}>
-    <button onClick={shot} className={styles.button + " " + className}>
+    <button onClick={shot} className={`${styles.button} ${className}`}>
       <p>{color}</p>
       <p>{colorCode}</p>
     </button>

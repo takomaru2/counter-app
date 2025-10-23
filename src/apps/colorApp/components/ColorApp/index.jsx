@@ -14,8 +14,16 @@ export const ColorApp = () => {
     <div className={`${styles.wrapper} ${styles[borderColor]}`}>
       <Button color={"red"} colorCode={"#FF5733"} handleClick={handleClick} />
       <Button color={"blue"} colorCode={"#3357FF"} handleClick={handleClick} />
-      <Button color={"purple"} colorCode={"#8e44ad"} />
-      <Button color={"yellow"} colorCode={"#F1C40F"} />
+      <Button
+        color={"purple"}
+        colorCode={"#8e44ad"}
+        handleClick={handleClick}
+      />
+      <Button
+        color={"yellow"}
+        colorCode={"#F1C40F"}
+        handleClick={handleClick}
+      />
     </div>
   );
 };

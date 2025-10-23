@@ -1,8 +1,8 @@
 .button {
   font-weight: bold;
   width: calc(100% / 3);
+  //transition: 1s background-color ease-in-out;
 }
-
 .button:hover {
   color: white;
 }

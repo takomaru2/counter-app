@@ -1,35 +1,44 @@
 .wrapper {
   box-sizing: border-box;
-  border: 40px solid red;
+  border-width: 40px;
+  border-style: solid;
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
 }
 
 .red {
-  border: 40px solid #e74c3c;
+  border-color: #e74c3c;
 }
+
 .blue {
-  border: 40px solid #3498db;
+  border-color: #3498db;
 }
+
 .yellow {
-  border: 40px solid #f1c40f;
+  border-color: #f1c40f;
 }
+
 .purple {
-  border: 40px solid #9b59b6;
+  border-color: #9b59b6;
 }
+
 .green {
-  border: 40px solid #2ecc71;
+  border-color: #2ecc71;
 }
+
 .orange {
-  border: 40px solid #e67e22;
+  border-color: #e67e22;
 }
+
 .pink {
-  border: 40px solid #ff69b4;
+  border-color: #ff69b4;
 }
+
 .gray {
-  border: 40px solid #95a5a6;
+  border-color: #95a5a6;
 }
+
 .cyan {
-  border: 40px solid #1abc9c;
+  border-color: #1abc9c;
 }
